@@ -32,3 +32,6 @@ This will create a production-ready build of the app in the build directory.
  
  - React - JavaScript library for building user interfaces
  - TMDB API - Movie information and images
+ 
+### Screenshots From The Project :
+![Captur](https://user-images.githubusercontent.com/119300043/212139555-bb1afd05-2c74-4d9e-9059-64b31a502f19.PNG)

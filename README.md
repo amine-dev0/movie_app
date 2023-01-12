@@ -5,7 +5,7 @@ This is a movie app built using React and the TMDB API. The app allows users to 
 
 To get started, you'll need to clone the repository and install the dependencies.
 
- - git clone https://github.com/your-username/movie-app.git
+ - git clone https://github.com/your-username/movie_app.git
  - cd movie-app
  - npm install
 

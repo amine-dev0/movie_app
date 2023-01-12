@@ -1,5 +1,5 @@
 ### Movie App
-This is a movie app built using React and the TMDB API. The app allows users to browse and search for popular movies, view movie details, and save their favorite movies to a personal watchlist.
+This is a movie app built using React and the TMDB API. The app allows users to browse and search for popular movies, view movie details.
 
 ### Getting Started
 To get started, you'll need to clone the repository and install the dependencies.

@@ -34,7 +34,7 @@ This will create a production-ready build of the app in the build directory.
  - TMDB API - Movie information and images
  
 ### Screenshots From The Project :
-![screen1](https://user-images.githubusercontent.com/119300043/212141206-49f3820a-5232-4ff4-a072-7dcfcf07c355.PNG)
+![screen1](https://user-images.githubusercontent.com/119300043/212144798-b5656c1a-5255-4e25-8ac8-78dec7b3b788.PNG)
 
 ![screen2](https://user-images.githubusercontent.com/119300043/212141252-38237a7d-3a7d-420b-97e9-b9ba2a97dd8b.PNG)
 

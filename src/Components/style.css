@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color:#0e1331;
+    --secondary-color:#5367ff;
+}
+body{
+    
+    background-image: linear-gradient(to right top, #000000, #040303, #080707, #0d0a0a, #100d0d);
+    
+}
+.header{
+    background-color: #0c0f21;
+    height: 100px;
+    margin-top: -140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    position: fixed;
+    z-index: 999;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 1rem;
+    margin-top: 15px;
+}
+nav ul li a{
+    
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    position: relative;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top:-10px;
+    left:50%;
+    height: 3px;
+    width:0;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+}
+nav ul li a:hover:before{
+    width:100%;
+}
+nav ul li a:focus{
+    background-color: rgb(255, 255, 255);
+    border: solid 0.2rem #bdc4ec21;
+    opacity: 0.2px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(251, 247, 247);
+}
+nav ul li a:focus::before{
+    width: 0%;
+}
+.search-btn{
+    display: flex;
+}
+.inputText{
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border: 0;
+    border-radius: 8px;
+    padding: 0 56px 0 16px;
+    font-size: 16px;
+    background: #bdc4ec21;
+    
+}
+.inputText::placeholder{
+    color: white;
+}
+.search-btn button{
+    background-color: inherit;
+    margin-left: -50px;
+    padding: 0.2rem 0.5rem;
+    border: #bdc4ec21;
+    color: white;
+    font-size: large;
+    
+    
+}
+.container{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    
+}
+.movie{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    width: 250px;
+    background-color: #232848;
+    margin: 1rem;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.movie .poster{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.movie-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.movie-details .box{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.movie-details .title{
+    width: 160px;
+    font-size: 15px;
+    text-align: center;
+    color: #DDDFE4;
+}
+.movie-details .overview{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: 100%;
+    background-color: var(--secondary-color);
+    opacity: 1;
+    color: white;
+    box-sizing: border-box;
+    padding: 1rem;
+    transition: all 0.4s ease-in-out;
+    overflow-y: auto;
+    transform: translateY(101%);
+    border-radius: 50px;
+    
+}
+.movie-details:hover .overview{
+    transform: translateY(0%);
+}
+.rating{
+    background-color: #1d1a2a;
+    color: gold;
+    width: 35px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    padding: 1px;
+    height: 35px;
+    font-size:smaller;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+
+@media (max-width:767px){
+    .header{
+        display: block;
+        z-index: 999;
+    }
+    
+    .search-btn{
+        width: 200px;
+        margin-right: 100px;
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul img {
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    margin-right: 100px;
+
+
+}
+
+
+.notfound{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(245, 241, 241); 
+  
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:rgb(225, 202, 202); 
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(17, 16, 16); 
+}
+
+.top  {
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    animation: rotate 3s infinite;
+    
+
+}
+
+@keyframes rotate {
+    25% {
+      
+      transform: scale(1.2);
+    }
+    
+  }
+.top img {
+    width: 40px;
+    height: 40px;
+}
+.top p {
+
+    position: fixed;
+    left: 5px;
+    bottom: -30px;
+    font-size: smaller;
+    justify-content: center;
+    font-weight: 700;
+    color: wheat;
+    
+
+}
+/*On Hover Color Change*/
+.cards {
+    display: inline-block;
+    transition: transform .2s;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.19rem;
+    cursor:pointer;
+    min-width:250px;
+    height:300px;
+    z-index:0;
+    
+}
+
+.cards:hover {
+    transform: scale(1.2);
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.cards__img {
+    height: 300px;
+    min-width: 250px;
+}
+
+.cards__overlay {
+    position: absolute;
+    padding: 0 1rem 1rem 1rem;
+    bottom: 0px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: flex-end;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .2s;
+    color: white;
+}   
+
+.cards__overlay:hover {
+    opacity: 0.7
+}
+
+.card__title {
+    font-weight: 900;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.card__runtime {
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+}
+
+.card__rating {
+    float: right;
+    color: gold;
+}
+
+.card__description {
+    font-style: bold;
+    font-size: larger;
+    font-size: 0.55rem;
+    margin-bottom: 0.25rem;
+}
